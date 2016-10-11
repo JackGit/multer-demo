@@ -59,7 +59,7 @@ UploadQueue.prototype.consume = function () {
   var that = this;
   var item;
 
-  if (that.cocurrent > that.maxCocurrent) {
+  if (that.cocurrent >= that.maxCocurrent) {
     console.log('reach max cocurrent', 'queue size', that.queue.length, 'cocurrent', that.cocurrent);
     return;
   }
