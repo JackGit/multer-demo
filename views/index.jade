@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  #container
+    a(id="browse", href="javascript:;") Browse
+    br
+    a(id="start-upload", href="javascript:;") Start Upload
+  ul#filelist
+  br
+
